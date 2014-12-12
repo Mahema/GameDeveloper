@@ -12,6 +12,36 @@
   <script type="text/javascript" src="javascripts/script.js"></script>
 
   <title>Education</title>
+  <link href="tanstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/prototype.js"></script>
+<script type="text/javascript" src="js/scriptaculous.js?load=effects,builder"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
+
+
+<!--YOU NEED THIS JAVASCRIPT CODE FOR THE ROLLOVER-->
+<script type="text/javascript">
+if(document.images)
+{
+  var image_array = new Array();
+	
+  // path to the directory with images
+  var path = 'images/';
+  // enumeration of the "active" images
+  image_array[0] = path + "image1.gif";
+  image_array[1] = path + "image2.gif";
+  var preload_image = new Array ();
+ 
+  for(var i=0; i<image_array.length; i++)
+  {
+    preload_image[i]= new Image();
+    preload_image[i].src = image_array[i];
+  }
+}
+function rollover(name, filename)
+{
+  document.images[name].src = filename;
+}
   <meta name="description" content="">
 
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -46,7 +76,9 @@
       <a target="_blank" href="http://2.bp.blogspot.com/_MciRxuCe1eM/TUQ16uhxjfI/AAAAAAAAAFk/oTEesjM5imk/s1600/GameDegree_01.jpg">
       <img src="http://2.bp.blogspot.com/_MciRxuCe1eM/TUQ16uhxjfI/AAAAAAAAAFk/oTEesjM5imk/s1600/GameDegree_01.jpg" title="Education">
       http://cdn.overclock.net/c/c9/c921b21b_image15.jpeg
- 
+ <a href="http://2.bp.blogspot.com/_MciRxuCe1eM/TUQ16uhxjfI/AAAAAAAAAFk/oTEesjM5imk/s1600/GameDegree_01.jpg" rel="lightbox" onmouseover="rollover('button1','http://teachers.egfi-k12.org/wp-content/uploads/2009/12/CSEW-new-slider-three.png')" 
+            onmouseout="rollover('button1','http://2.bp.blogspot.com/_MciRxuCe1eM/TUQ16uhxjfI/AAAAAAAAAFk/oTEesjM5imk/s1600/GameDegree_01.jpg')"> 
+<img name="button1" src="http://2.bp.blogspot.com/_MciRxuCe1eM/TUQ16uhxjfI/AAAAAAAAAFk/oTEesjM5imk/s1600/GameDegree_01.jpg"></a>
       </article>
       </div>
     </div>
@@ -55,7 +87,7 @@
       <p><a href="https://github.com/Mahema" class="avatar"><img src="https://avatars0.githubusercontent.com/u/9827690?v=3&amp;s=60" width="48" height="48"></a> <a href="https://github.com/Mahema">Mahema</a> maintains <a href="https://github.com/Mahema/GameDeveloper">Gamedeveloper</a></p>
       
       <a href="index.html">Home</a> |
-      <a href="salary.html">Salaryn</a> |
+      <a href="salary.html">Salary</a> |
       <a href="computerscience">Computer Science</a>
 
       </div>
