@@ -12,6 +12,34 @@
   <script type="text/javascript" src="javascripts/script.js"></script>
 
   <title>Gamedeveloper</title>
+  <link href="tanstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/prototype.js"></script>
+<script type="text/javascript" src="js/scriptaculous.js?load=effects,builder"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
+<script type="text/javascript">
+if(document.images)
+{
+  var image_array = new Array();
+	
+  // path to the directory with images
+  var path = 'images/';
+  // enumeration of the "active" images
+  image_array[0] = path + "image1.gif";
+  image_array[1] = path + "image2.gif";
+  var preload_image = new Array ();
+ 
+  for(var i=0; i<image_array.length; i++)
+  {
+    preload_image[i]= new Image();
+    preload_image[i].src = image_array[i];
+  }
+}
+function rollover(name, filename)
+{
+  document.images[name].src = filename;
+}
+</script>
   <meta name="description" content="">
 
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -45,13 +73,7 @@ A developer may specialize in a certain video game console (such as Nintendo's W
 
 Most video game publishers maintain development studios (such as Electronic Arts's EA Canada, Square Enix's studios, Activision's Radical Entertainment, Nintendo EAD and Sony's Polyphony Digital and Naughty Dog). However, since publishing is still their primary activity they are generally described as "publishers" rather than "developers". Developers may be private as well (such as Bungie, the company which developed the Halo series exclusive to Microsoft's Xbox) http://en.wikipedia.org/wiki/Video_game_developer
 </p>
-<script>
-<link href="tanstyle.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="js/prototype.js"></script>
-<script type="text/javascript" src="js/scriptaculous.js?load=effects,builder"></script>
-<script type="text/javascript" src="js/lightbox.js"></script>
-<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
-</script>
+
       <a target="_blank" href="http://cdn10.mixrmedia.com/wp-uploads/wirebot/blog/2009/11/game-developers1.gif">
       <img src="http://cdn10.mixrmedia.com/wp-uploads/wirebot/blog/2009/11/game-developers1.gif" title="GameDeveloper">
       http://cdn10.mixrmedia.com/wp-uploads/wirebot/blog/2009/11/game-developers1.gif
