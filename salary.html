@@ -12,6 +12,34 @@
   <script type="text/javascript" src="javascripts/script.js"></script>
 
   <title>Salary</title>
+    <link href="tanstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/prototype.js"></script>
+<script type="text/javascript" src="js/scriptaculous.js?load=effects,builder"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
+<script type="text/javascript">
+if(document.images)
+{
+  var image_array = new Array();
+	
+  // path to the directory with images
+  var path = 'images/';
+  // enumeration of the "active" images
+  image_array[0] = path + "image1.gif";
+  image_array[1] = path + "image2.gif";
+  var preload_image = new Array ();
+ 
+  for(var i=0; i<image_array.length; i++)
+  {
+    preload_image[i]= new Image();
+    preload_image[i].src = image_array[i];
+  }
+}
+function rollover(name, filename)
+{
+  document.images[name].src = filename;
+}
+</script>
   <meta name="description" content="">
 
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -41,10 +69,11 @@
 
         <p>Video game developers create games for handheld and console video gaming systems. The U.S. Bureau of Labor Statistics projects that employment of graphic designers, including video game developers, will increase 13 percent from 2008 to 2018. Video game designers in 2010 earned between $41,154 and $69,700, reports Payscale.com. Aspiring video game developers should complete at least four years of training in a program that provides both classroom learning and hands-on experiences. http://classroom.synonym.com/video-game-developer-education-requirements-2569.html
 </p>
+       <a href="http://cdn.overclock.net/c/c9/c921b21b_image15.jpeg" rel="lightbox" onmouseover="rollover('button1','http://www.gamecareerguide.com/db_area/images/item_images/110803/figure14.jpg')" 
+            onmouseout="rollover('button1','http://www.gamecareerguide.com/db_area/images/item_images/110803/figure14.jpg')"> 
+<img name="button1" src="http://cdn.overclock.net/c/c9/c921b21b_image15.jpeg"></a>
+http://cdn10.mixrmedia.com/wp-uploads/wirebot/blog/2009/11/game-developers1.gif
 
-      <a target="_blank" href="http://cdn.overclock.net/c/c9/c921b21b_image15.jpeg">
-      <img src="http://cdn.overclock.net/c/c9/c921b21b_image15.jpeg" title="Salary">
-      http://cdn10.mixrmedia.com/wp-uploads/wirebot/blog/2009/11/game-developers1.gif
 
         </article>
       </div>
